@@ -6,9 +6,9 @@ def map(source_array)
   new_array
 end
 
-def reduce(source_array, starting_point = 0)
+def reduce(source_array, starting_value = 0)
   source_array.each do |i|
-    starting_point += yield(i)
+    starting_value += yield(i)
   end
-  starting_point
+  starting_value
 end
