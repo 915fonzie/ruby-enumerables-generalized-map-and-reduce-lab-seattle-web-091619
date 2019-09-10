@@ -8,7 +8,7 @@ end
 
 def reduce(source_array, starting_point = 0)
   source_array.each do |i|
-    
+    starting_point += yield(i)
   end
   starting_point
 end
